@@ -102,7 +102,7 @@ Welcome to the Freelance Platform, a web application built using the MERN (Mongo
 - React: Frontend library
 - Node.js: Runtime environment for the server
 - Axios: HTTP requests handling
-- Bootstrap: Styling and components
+-tailwind: Styling and components
 - ...other dependencies
 
 ## Contributing
