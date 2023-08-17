@@ -108,7 +108,3 @@ Welcome to the Freelance Platform, a web application built using the MERN (Mongo
 ## Contributing
 
 Contributions are welcome! Feel free to open issues and pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
