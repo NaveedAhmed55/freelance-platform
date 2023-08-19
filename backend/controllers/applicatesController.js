@@ -32,6 +32,17 @@ const apply = async (req, res) => {
   }
 };
 
+const getApplications= async (req,res)=>{
+  try{
+  const applications=await Applied.find();
+  res.status(200).json({applications})
+}
+  catch(error){
+    res.status(500).json({error})
+  }
+}
+
 module.exports = {
   apply,
+  getApplications
 };
