@@ -18,8 +18,19 @@ const getProjects = async (req, res) => {
     res.status(500).json({ error: 'Error fetching projects' });
   }
 };
+const getProjectByUser= async (req,res)=>{
+  try{
+    const {email}=req.body;
+    const projectUser=await Project.find({email})
+    res.status(200).json({projectUser})
+  }
+  catch(error){
+    res.status(400).json({error})
+  }
+}
 
 module.exports = {
   createProject,
   getProjects,
+  getProjectByUser
 };
