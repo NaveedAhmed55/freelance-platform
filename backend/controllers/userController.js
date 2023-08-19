@@ -22,9 +22,14 @@ const checkUser= async (req,res)=>{
     if(password==user.password){
       res.status(200).json({email:user.email})
     }
+    else {
+      //unauthorized
+      res.status(401);
+    }
     
   }
   catch (error) {
+    //unauthorized 
     return res.status(500).json({ error: 'An error occurred' });
   }
 
